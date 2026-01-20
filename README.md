@@ -27,3 +27,30 @@ Designed for developers, CI pipelines, and security learners.
 
 ```bash
 deno run -A https://raw.githubusercontent.com/umemiya969/fluxasec/main/cli.ts example.com
+
+📦 Local Usage
+git clone https://github.com/umemiya969/fluxasec
+cd fluxasec
+
+deno task scan example.com
+
+🧪 Example Output
+FluxaSec Report
+Target: example.com
+
+[✓] HTTPS enabled
+
+Security Headers:
+[✗] content-security-policy missing
+[✓] x-frame-options
+[✗] strict-transport-security missing
+
+Risk level: MEDIUM
+
+
+💖 Support the Project
+If FluxaSec is useful for you:
+⭐ Star this repository
+💸 Support via GitHub Sponsors
+🧑‍💻 Contribute improvements and ideas
+Your support helps keep the project alive.
